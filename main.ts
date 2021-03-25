@@ -27,9 +27,9 @@ basic.forever(function () {
 })
 basic.forever(function () {
     bearing = input.compassHeading()
-    if (bearing < 0) {
-    	
+    if (bearing < 45 || bearing > 315) {
+        basic.showString("N")
     } else {
-    	
+        basic.showString("")
     }
 })
